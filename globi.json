@@ -1,0 +1,61 @@
+{
+  "@context": ["http://www.w3.org/ns/csvw", {"@language": "en"}],
+  "rdfs:comment": ["inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/"],
+  "dcterms:bibliographicCitation": "Poelen, JH (2017). Plant pathogen-host interactions semi-automatically scraped from Common Names of Plant Diseases published by the American Phytopathological Society at http://www.apsnet.org/publications/commonnames/Pages/Turfgrasses.aspx using Samara, a Planteome (http://planteome.org) plant-trait scraper.",
+  "shouldResolveReferences": false,
+  "url": "aps-turfgrasses.tsv",
+  "delimiter": "\t",
+  "headerRowCount": 1,
+  "null": [""],
+  "tableSchema": {
+    "columns": [{
+      "name": "disease_name",
+      "titles": "disease_name",
+      "datatype": "string"
+    }, {
+      "name": "source_taxon_verbatim_name",
+      "titles": "source_taxon_verbatim_name",
+      "datatype": "string"
+    }, {
+      "name": "sourceTaxonName",
+      "titles": "source_taxon_name",
+      "datatype": "string"
+    }, {
+      "name": "sourceTaxonId",
+      "titles": "source_taxon_id",
+      "datatype": "string"
+    }, {
+      "name": "interactionTypeName",
+      "titles": "interaction_type_label",
+      "datatype": "string"
+    }, {
+      "name": "interactionTypeId",
+      "titles": "interaction_type_id",
+      "datatype": "string"
+    },{
+      "name": "target_taxon_verbatim_name",
+      "titles": "target_taxon_verbatim_name",
+      "datatype": "string"
+    },{
+      "name": "targetTaxonName",
+      "titles": "target_taxon_name",
+      "datatype": "string"
+    },{
+      "name": "targetTaxonId",
+      "titles": "target_taxon_id",
+      "datatype": "string"
+    }, {
+      "name": "referenceCitation",
+      "titles": "source_citation",
+      "datatype": "string"
+    },{
+      "name": "referenceUrl",
+      "titles": "source_url",
+      "datatype": "string"
+    },{
+      "name": "source_accessed_at",
+      "titles": "source_accessed_at",
+      "datatype": "string"
+    }]
+  }
+}
